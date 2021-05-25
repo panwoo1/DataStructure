@@ -115,3 +115,14 @@ class DoublyLinkedList:
         new_list = DoublyLinkedList()
         self.splice(x, self.head.prev, list.self.next)
         return new_list
+    
+    def printList(self):
+		v = self.head.next
+		print("h -> " , end='')
+		while(v != self.head):
+			if(v.next != self.head):
+				print(v.key, "->", end=" ")
+			else:
+				print(v.key, end="")
+			v = v.next
+		print(" -> h")
